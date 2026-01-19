@@ -8,14 +8,19 @@
   </head>
   <body>
     <a-scene webxr="referenceSpaceType: local-floor; optionalFeatures: hit-test;" ar-hit-test="target: #placed-object" ar-mode-ui="enabled: true">
+      <a-assets>
+        <a-asset-item id="model-obj" src="model.obj"></a-asset-item>
+        <a-asset-item id="model-mtl" src="model.mtl"></a-asset-item>
+      </a-assets>
       <a-camera ar-camera></a-camera>
 
       <!-- Object to place -->
-      <a-box
+      <a-obj-model
         id="placed-object"
-        color="red"
+        src="#model-obj"
+        mtl="#model-mtl"
         visible="false">
-      </a-box>
+      </a-obj-model>
     </a-scene>
   </body>
 </html>
