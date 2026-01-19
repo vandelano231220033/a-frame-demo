@@ -7,7 +7,7 @@
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene webxr="referenceSpaceType: local-floor; optionalFeatures: hit-test;" ar-hit-test="target: #placed-object" ar-mode-ui="enabled: true">
+    <a-scene webxr="referenceSpaceType: local-floor; requiredFeatures: hit-test;" ar-hit-test="target: #placed-object" ar-mode-ui="enabled: true">
       <a-assets>
         <a-asset-item id="model-obj" src="Boxes.obj"></a-asset-item>
         <a-asset-item id="model-mtl" src="Boxes.mtl"></a-asset-item>
