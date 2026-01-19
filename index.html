@@ -7,7 +7,7 @@
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene webxr="optionalFeatures: hit-test;" ar-hit-test="target: #placed-object" embedded ar-mode-ui="enabled: true">
+    <a-scene webxr="referenceSpaceType: local-floor; optionalFeatures: hit-test;" ar-hit-test="target: #placed-object" ar-mode-ui="enabled: true">
       <a-camera ar-camera></a-camera>
 
       <!-- Object to place -->
