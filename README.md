@@ -5,7 +5,7 @@ This is a simple example of a "Tap to Place" function for Android AR using the A
 ## Features
 
 - Uses WebXR for AR on Android devices
-- Tap on a surface to place a red cube
+- Tap on a surface to place a custom 3D model
 - Automatic reticle shows placement position
 
 ## Requirements
@@ -19,7 +19,7 @@ This is a simple example of a "Tap to Place" function for Android AR using the A
 2. Allow camera permissions when prompted.
 3. Point your camera at a flat surface.
 4. A reticle will appear indicating where the object can be placed.
-5. Tap the screen to place a red cube at that location.
+5. Tap the screen to place the 3D model at that location.
 
 ## Serving the App
 
