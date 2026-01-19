@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tap to Place AR with A-Frame</title>
+    <meta name="description" content="Tap to Place AR example with A-Frame">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene webxr="optionalFeatures: hit-test;" ar-hit-test="target: #placed-object" embedded ar-mode-ui="enabled: true">
+      <a-camera ar-camera></a-camera>
+
+      <!-- Object to place -->
+      <a-box
+        id="placed-object"
+        color="red"
+        visible="false">
+      </a-box>
+    </a-scene>
+  </body>
+</html>
